@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+body
+{
+    min-height: 100vh;
+
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.nav a{
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+    background-color: red;
+    transition: .5s;
+    width: 30px;
+    height: 30px;
+     border-radius: 8px;
+     background: white;
+     color: greenyellow;
+}
+.nav a:hover
+{
+    color: #333;
+}
+.paralex
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("home.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#text
+{
+    
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 4px 5px black;
+   text-align: center;
+   
+}
+
+.sec
+{
+    position: relative;
+    background-color: black;
+    color: white;
+
+}
+.sec h2{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 13px;
+}
+.sec p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    text-align: justify;
+}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.pyramid-loader {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: block;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg);
+    margin-left: 33%;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: spin 4s linear infinite;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .pyramid-loader .wrapper .side {
+    width: 70px;
+    height: 70px;
+  /* you can choose any gradient or color you want */
+    /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .pyramid-loader .wrapper .side1 {
+    transform: rotateZ(-30deg) rotateY(90deg);
+    background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+  }
+  
+  .pyramid-loader .wrapper .side2 {
+    transform: rotateZ(30deg) rotateY(90deg);
+    background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+  }
+  
+  .pyramid-loader .wrapper .side3 {
+    transform: rotateX(30deg);
+    background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+  }
+  
+  .pyramid-loader .wrapper .side4 {
+    transform: rotateX(-30deg);
+    background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+  }
+  
+  .pyramid-loader .wrapper .shadow {
+    width: 60px;
+    height: 60px;
+    background: #8B5AD5;
+    position: absolute;
+   
+    transform: rotateX(90deg) translateZ(-40px);
+    filter: blur(12px);
+    
+  }
